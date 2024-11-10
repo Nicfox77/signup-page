@@ -232,7 +232,7 @@ export default function SignUpForm() {
                 <label htmlFor="username" className="block text-sm font-medium text-gray-700">Desired Username:</label>
                 <TextInput type="text" id="username" name="username" value={formData.username} onChange={handleChange}/>
                 {usernameError && <span className="text-red-500 text-sm">{usernameError}</span>}
-                {formErrors.username && <span className="text-green-500 text-sm">{formErrors.username}</span>}
+                {formErrors.username && <div className="text-red-500 text-sm">{formErrors.username}</div>}
             </div>
 
             <div>
